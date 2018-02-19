@@ -1,5 +1,5 @@
 import { Component, EventEmitter } from '@angular/core';
-import { UploaderOptions, UploadFile, UploadInput, UploadOutput } from 'ngx-uploader';
+import { UploadFile, UploadInput, UploadOutput } from 'ngx-uploader';
 import { Router } from '@angular/router';
 
 @Component({
@@ -9,7 +9,6 @@ import { Router } from '@angular/router';
 })
 export class FileUploaderComponent {
 
-  options: UploaderOptions;
   formData: FormData;
   files: UploadFile[];
   uploadInput: EventEmitter<UploadInput>;

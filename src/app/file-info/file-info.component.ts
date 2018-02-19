@@ -23,6 +23,10 @@ export class FileInfoComponent implements OnInit {
 
 
   get fileName() {
+    if (!this._fileName) {
+      return '';
+    }
+
     let split = this._fileName.split('.');
     let fileName = '';
 
@@ -38,6 +42,10 @@ export class FileInfoComponent implements OnInit {
   }
 
   get fileExtension() {
+    if (!this._fileName) {
+      return '';
+    }
+
     const split = this._fileName.split('.');
 
     return split[split.length - 1];

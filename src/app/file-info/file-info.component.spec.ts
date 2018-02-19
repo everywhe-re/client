@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FileInfoComponent } from './file-info.component';
+import { FaFileIconPipe } from '../pipes/fa-file-icon.pipe';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('FileInfoComponent', () => {
   let component: FileInfoComponent;
@@ -8,7 +10,13 @@ describe('FileInfoComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FileInfoComponent ]
+      imports: [
+        RouterTestingModule
+      ],
+      declarations: [
+        FileInfoComponent,
+        FaFileIconPipe
+      ]
     })
     .compileComponents();
   }));

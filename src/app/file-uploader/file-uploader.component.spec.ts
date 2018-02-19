@@ -1,6 +1,9 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FileUploaderComponent } from './file-uploader.component';
+import { NgUploaderModule } from 'ngx-uploader';
+import { ProgressbarComponent } from '../progressbar/progressbar.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('FileUploaderComponent', () => {
   let component: FileUploaderComponent;
@@ -8,7 +11,14 @@ describe('FileUploaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FileUploaderComponent ]
+      imports: [
+        NgUploaderModule,
+        RouterTestingModule
+      ],
+      declarations: [
+        FileUploaderComponent,
+        ProgressbarComponent
+      ]
     })
     .compileComponents();
   }));
