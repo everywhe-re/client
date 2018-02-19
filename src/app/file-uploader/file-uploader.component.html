@@ -4,7 +4,7 @@
   </div>
 
   <div class="file-input">
-    <input type="file" ngFileSelect [options]="options" (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" multiple>
+    <input type="file" ngFileSelect (uploadOutput)="onUploadOutput($event)" [uploadInput]="uploadInput" multiple>
     <button type="button" class="button-choose">Choose</button>
     <label class="label" data-js-label>{{ currentFileName }}</label>
   </div>
