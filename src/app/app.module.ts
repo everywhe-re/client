@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgUploaderModule } from 'ngx-uploader';
 
 import { AppComponent } from './app.component';
 import { FileUploaderComponent } from './file-uploader/file-uploader.component';
@@ -10,7 +9,10 @@ import { RouterModule } from '@angular/router';
 import { APP_ROUTES } from './app.routes';
 import { FileInfoComponent } from './file-info/file-info.component';
 import { FaFileIconPipe } from './pipes/fa-file-icon.pipe';
-
+import { FileUploadService } from './providers/file-upload.service';
+import { FileInputComponent } from './file-input/file-input.component';
+import { CryptoService } from './providers/crypto.service';
+import { WebWorkerService } from './providers/web-worker.service';
 
 @NgModule({
   declarations: [
@@ -19,14 +21,18 @@ import { FaFileIconPipe } from './pipes/fa-file-icon.pipe';
     UploadFormComponent,
     ProgressbarComponent,
     FileInfoComponent,
-    FaFileIconPipe
+    FaFileIconPipe,
+    FileInputComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(APP_ROUTES),
-    NgUploaderModule
+    RouterModule.forRoot(APP_ROUTES)
   ],
-  providers: [],
+  providers: [
+    FileUploadService,
+    CryptoService,
+    WebWorkerService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

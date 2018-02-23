@@ -281,6 +281,10 @@ adm-zip@^0.4.7:
   version "0.4.7"
   resolved "https://registry.yarnpkg.com/adm-zip/-/adm-zip-0.4.7.tgz#8606c2cbf1c426ce8c8ec00174447fd49b6eafc1"
 
+aes-js@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/aes-js/-/aes-js-3.1.0.tgz#f5f7588494526997cc635cc334c8bb8e967a5d82"
+
 after@0.8.2:
   version "0.8.2"
   resolved "https://registry.yarnpkg.com/after/-/after-0.8.2.tgz#fedb394f9f0e02aa9768e702bda23b505fae7e1f"
@@ -341,6 +345,10 @@ amqplib@^0.5.2:
     buffer-more-ints "0.0.2"
     readable-stream "1.x >=1.1.9"
     safe-buffer "^5.0.1"
+
+angular-in-memory-web-api@~0.5.2:
+  version "0.5.3"
+  resolved "https://registry.yarnpkg.com/angular-in-memory-web-api/-/angular-in-memory-web-api-0.5.3.tgz#49ba7b7d19210e14b0dbe62d2e3b63d4b4a29c4a"
 
 ansi-html@0.0.7:
   version "0.0.7"
@@ -1465,7 +1473,7 @@ copy-webpack-plugin@~4.4.1:
     p-limit "^1.0.0"
     serialize-javascript "^1.4.0"
 
-core-js@^2.2.0, core-js@^2.4.0, core-js@^2.4.1:
+core-js@^2.2.0, core-js@^2.4.0, core-js@^2.4.1, core-js@^2.5.3:
   version "2.5.3"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.5.3.tgz#8acc38345824f16d8365b7c9b4259168e8ed603e"
 
@@ -4266,9 +4274,23 @@ netmask@~1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-1.0.6.tgz#20297e89d86f6f6400f250d9f4f6b4c1945fcd35"
 
-ngx-uploader@^4.2.2:
-  version "4.2.2"
-  resolved "https://registry.yarnpkg.com/ngx-uploader/-/ngx-uploader-4.2.2.tgz#951329cc936fae212a453568ce37a302f94a2c9e"
+ngx-web-worker@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/ngx-web-worker/-/ngx-web-worker-0.0.2.tgz#99b2adbb263e52307977224e019f822d0feae300"
+  dependencies:
+    "@angular/common" "^5.2.0"
+    "@angular/compiler" "^5.2.0"
+    "@angular/core" "^5.2.0"
+    "@angular/forms" "^5.2.0"
+    "@angular/http" "^5.2.0"
+    "@angular/platform-browser" "^5.2.0"
+    "@angular/platform-browser-dynamic" "^5.2.0"
+    "@angular/router" "^5.2.0"
+    angular-in-memory-web-api "~0.5.2"
+    core-js "^2.5.3"
+    rxjs "^5.5.1"
+    systemjs "0.19.40"
+    zone.js "^0.8.4"
 
 no-case@^2.2.0:
   version "2.3.2"
@@ -5517,7 +5539,7 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rxjs@^5.5.6:
+rxjs@^5.5.1, rxjs@^5.5.6:
   version "5.5.6"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-5.5.6.tgz#e31fb96d6fd2ff1fd84bcea8ae9c02d007179c02"
   dependencies:
@@ -6243,6 +6265,12 @@ syntax-error@^1.1.1:
   dependencies:
     acorn-node "^1.2.0"
 
+systemjs@0.19.40:
+  version "0.19.40"
+  resolved "https://registry.yarnpkg.com/systemjs/-/systemjs-0.19.40.tgz#158f64a9f4ef541a7fda6b40e527ee46b6c54cd0"
+  dependencies:
+    when "^3.7.5"
+
 tapable@^0.2.7:
   version "0.2.8"
   resolved "https://registry.yarnpkg.com/tapable/-/tapable-0.2.8.tgz#99372a5c999bf2df160afc0d74bed4f47948cd22"
@@ -6872,7 +6900,7 @@ websocket-extensions@>=0.1.1:
   version "0.1.3"
   resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.3.tgz#5d2ff22977003ec687a4b87073dfbbac146ccf29"
 
-when@^3.7.7:
+when@^3.7.5, when@^3.7.7:
   version "3.7.8"
   resolved "https://registry.yarnpkg.com/when/-/when-3.7.8.tgz#c7130b6a7ea04693e842cdc9e7a1f2aa39a39f82"
 
@@ -7086,6 +7114,6 @@ yn@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/yn/-/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
 
-zone.js@^0.8.19:
+zone.js@^0.8.19, zone.js@^0.8.4:
   version "0.8.20"
   resolved "https://registry.yarnpkg.com/zone.js/-/zone.js-0.8.20.tgz#a218c48db09464b19ff6fc8f0d4bb5b1046e185d"

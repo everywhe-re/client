@@ -1,0 +1,8 @@
+<div class="file-input-container">
+  <button class="file-input-browse" (click)="fileInput.click()">Browse</button>
+
+  <label class="file-input-label">
+    {{ selectedFileName }}
+    <input #fileInput type="file" class="file-input" (change)="handleFileInput($event.target.files)" />
+  </label>
+</div>

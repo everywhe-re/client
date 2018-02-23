@@ -8,5 +8,10 @@ export const environment = {
   endpoints: {
     addFile: 'http://127.0.0.1:3000/add',
     getFile: 'http://127.0.0.1:3000/get'
+  },
+  crypto: {
+    keyLength: 32,
+    ivLength: 16,
+    blockSize: 16
   }
 };
